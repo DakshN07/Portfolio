@@ -5,7 +5,7 @@ import * as random from 'maath/random/dist/maath-random.esm'
 
 function Particles(props) {
   const ref = useRef()
-  const [sphere] = useMemo(() => [random.inSphere(new Float32Array(5000), { radius: 1.2 })], [])
+  const [sphere] = useMemo(() => [random.inSphere(new Float32Array(1668 * 3), { radius: 1.2 })], [])
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10

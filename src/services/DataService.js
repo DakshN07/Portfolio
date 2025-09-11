@@ -21,13 +21,21 @@ class DataService {
       })
       
       if (!response.ok) {
+        if (response.status === 402) {
+          console.warn(`Payment required for ${objectName}. API key may need renewal or account may need credits.`)
+          return null
+        }
         throw new Error(`HTTP error! status: ${response.status}`)
       }
       
       const data = await response.json()
       return data.value || data
     } catch (error) {
-      console.error(`Error in rapid research for ${objectName}:`, error)
+      if (error.message.includes('402')) {
+        console.warn(`Skipping ${objectName} due to payment required`)
+      } else {
+        console.error(`Error in rapid research for ${objectName}:`, error)
+      }
       return null
     }
   }
