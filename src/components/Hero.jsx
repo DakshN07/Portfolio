@@ -8,7 +8,7 @@ const Hero = () => {
     { icon: FiGithub, href: 'https://github.com/DakshN07', label: 'GitHub' },
     { icon: FiLinkedin, href: 'https://www.linkedin.com/in/dakshnayak02/', label: 'LinkedIn' },
     { icon: SiLeetcode, href: 'https://leetcode.com/u/Daksh_vn/', label: 'LeetCode' },
-    { icon: FiMail, href: 'mailto:nayakdaksh93@gmail.com', label: 'Email' }
+    { icon: FiMail, href: 'mailto:dakshnayak635@gmail.com', label: 'Email' }
   ]
 
   return (

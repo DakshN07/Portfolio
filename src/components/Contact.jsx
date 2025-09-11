@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: FiMail,
       label: 'Email',
-      value: 'nayakdaksh93@gmail.com',
-      href: 'mailto:nayakdaksh93@gmail.com',
+      value: 'dakshnayak635@gmail.com',
+      href: 'mailto:dakshnayak635@gmail.com',
       color: 'text-blue-600 dark:text-blue-400'
     },
     {

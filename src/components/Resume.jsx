@@ -18,7 +18,7 @@ const Resume = () => {
       title: 'Web Developer || Semi finalist in IITB Techfest\'23 Hackathon || NIV\'23 Hackathon Finalist ||3rd Rank in INTERSTALLA\'23 Hackathon || Video Editor',
       location: 'Nagpur, Maharashtra, India',
       phone: '8432391009',
-      email: 'nayakdaksh93@gmail.com',
+      email: 'dakshnayak635@gmail.com',
       linkedin: 'https://www.linkedin.com/in/dakshnayak02/',
       github: 'https://github.com/DakshN07',
       leetcode: 'https://leetcode.com/u/Daksh_vn/'
