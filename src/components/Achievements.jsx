@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FiAward, FiTrophy, FiStar, FiTarget, FiUsers, FiBookOpen } from 'react-icons/fi'
+import { FiAward, FiStar, FiTarget, FiUsers, FiBookOpen } from 'react-icons/fi'
 
 const Achievements = ({ profileData }) => {
   const [ref, inView] = useInView({
@@ -11,7 +11,7 @@ const Achievements = ({ profileData }) => {
 
   const achievements = [
     {
-      icon: FiTrophy,
+      icon: FiAward,
       title: 'Semi-finalist - IITB Techfest\'23 Hackathon',
       description: 'Reached semi-finals in one of India\'s most prestigious technical festivals, competing against thousands of participants.',
       category: 'Hackathon',
