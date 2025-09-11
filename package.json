@@ -21,7 +21,7 @@
     "@react-three/drei": "^9.122.0",
     "react-spring": "^9.7.3",
     "react-countup": "^6.4.2"
-    "@monogrid/gainmap-js": "^3.1.0",
+    "@monogrid/gainmap-js": "^3.1.0"
   },
   "devDependencies": {
     "@types/react": "19.1.12",
