@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FiUser, FiMapPin, FiGraduationCap, FiHeart } from 'react-icons/fi'
+import { FiUser, FiMapPin, FiBookOpen, FiHeart } from 'react-icons/fi'
 
 const About = ({ profileData }) => {
   const [ref, inView] = useInView({
@@ -10,7 +10,7 @@ const About = ({ profileData }) => {
   })
 
   const stats = [
-    { icon: FiGraduationCap, label: 'Education', value: 'BTech CSE' },
+    { icon: FiBookOpen, label: 'Education', value: 'BTech CSE' },
     { icon: FiMapPin, label: 'Location', value: 'Nagpur, MH' },
     { icon: FiHeart, label: 'Passion', value: 'Web Dev' },
     { icon: FiUser, label: 'Role', value: 'Developer' }
@@ -116,7 +116,7 @@ const About = ({ profileData }) => {
             {/* Education */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                <FiGraduationCap className="text-primary-600 dark:text-primary-400" />
+                <FiBookOpen className="text-primary-600 dark:text-primary-400" />
                 Education
               </h3>
               <div className="space-y-4">
