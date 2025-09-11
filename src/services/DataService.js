@@ -31,7 +31,9 @@ class DataService {
       const data = await response.json()
       return data.value || data
     } catch (error) {
-      if (error.message.includes('402')) {
+      if (error.name === 'TypeError' && error.message === 'Failed to fetch') {
+        console.warn(`Network error for ${objectName}: Unable to connect to API. This could be due to CORS, network connectivity, or API availability issues.`)
+      } else if (error.message.includes('402')) {
         console.warn(`Skipping ${objectName} due to payment required`)
       } else {
         console.error(`Error in rapid research for ${objectName}:`, error)
